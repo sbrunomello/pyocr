@@ -33,7 +33,7 @@ def api_root():
     u'message': u'Welcome to our secret APIs' 
   } )
   resp.status_code = 200
-  return render_template('upload_form.html', landing_page = 'process')
+  return resp
 
 @app.route('/test', methods = ['GET'])
 def test():
