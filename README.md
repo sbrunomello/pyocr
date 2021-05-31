@@ -1,2 +1,1 @@
-# pyocr
- simple ocr with python
+Simple OCR with Python
