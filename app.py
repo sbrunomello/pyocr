@@ -58,7 +58,7 @@ def process():
 
       output_file += ext
 
-      if 1 == 1:
+      if os.path.isfile(output_file):
         f = open(output_file)
         resp = jsonify( {
           u'status': 200,
