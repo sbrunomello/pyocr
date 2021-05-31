@@ -5,11 +5,7 @@ import logging
 import shutil
 from flask import Flask, jsonify, render_template, request
 from werkzeug import secure_filename
-from PIL import Image # Importando o módulo Pillow para abrir a imagem no script
 
-import pytesseract # Módulo para a utilização da tecnologia OCR
-
-print( pytesseract.image_to_string( Image.open('aa.jpg') ) ) # Extraindo o texto da imagem  
 app = Flask(__name__)
 app.logger.addHandler(logging.StreamHandler(sys.stdout))
 app.logger.setLevel(logging.ERROR)
