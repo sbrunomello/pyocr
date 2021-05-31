@@ -71,7 +71,8 @@ def process():
       else:
         resp = jsonify( {
           u'status': 422,
-          u'message': u'Unprocessable Entity'
+          u'message': u'Unprocessable Entity',
+          u'ocr':{k:v.decode('utf-8') for k,v in enumerate(f.read().splitlines())}
         } )
         resp.status_code = 422
 
